@@ -114,7 +114,7 @@ hr {
 }
 
 .txt-topo-site h3 {
-    font-size: 44px;
+    font-size: 50px;
     animation: slideBottom 1s ease forwards;
     animation-delay:calc(0.2s * var(--i))
 }
