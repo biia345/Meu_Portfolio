@@ -96,6 +96,10 @@ hr {
 
 /* início topo do site */
 
+div.flex{
+    margin-top: 100px;
+}
+
 .txt-topo-site {
     color: white;
     line-height: 10px;
@@ -105,7 +109,8 @@ hr {
 
 .txt-topo-site h1 {
     font-size: 50px;
-    line-height: 1;
+    line-height: 0.8;
+    margin: 25px 0;
     animation: slideBottom 1s ease forwards;
     animation-delay:calc(0.2s * var(--i));
     display: flex;
@@ -116,7 +121,8 @@ hr {
 .txt-topo-site h3 {
     font-size: 50px;
     animation: slideBottom 1s ease forwards;
-    animation-delay:calc(0.2s * var(--i))
+    animation-delay:calc(0.2s * var(--i));
+    margin: 0;
 }
 
 .txt-topo-site p {
@@ -150,9 +156,9 @@ span {
     font-size: 50px;
 }
 
-.topo-do-site .txt-topo-site p{
-    margin: 50px 0px;
-}
+/* .topo-do-site .txt-topo-site p{
+    margin: 10px 0px;
+} */
 
 /* fim topo do site */
 
@@ -204,6 +210,9 @@ section.especialidades {
 }
 
 section.especialidades .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 100px;
 }
 
@@ -212,6 +221,8 @@ section.especialidades .flex {
     padding: 40px;
     border-radius: 20px;
     font-size: 17px;
+    width: 500px;
+    text-align: left;
 }
 
 .especialidades .especialidades-box:hover {
@@ -240,16 +251,16 @@ section .sobre {
 }
 
 section .sobre .flex {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .sobre .txt-sobre {
      color: white;
      margin-left: 70px;
-}
-
-div.flex{
-    margin-top: 80px;
+     margin-right: 40px;
 }
 
 .sobre .txt-sobre h2 {
@@ -281,13 +292,20 @@ div.flex{
     transition: 0.3s all;   
 }
 
+.sobre .img-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sobre .img-sobre img {
     max-width: 500px;
     max-height: 400px;
     width: auto;
     height: auto;
-    position: relative;
+    /* position: relative; */
     margin-left: 40px;
+    object-fit: cover;
 }
 
 /* fim sobre */
