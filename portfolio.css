@@ -105,7 +105,7 @@ hr {
 
 .txt-topo-site h1 {
     font-size: 50px;
-    line-height: 1.2;
+    line-height: 1;
     animation: slideBottom 1s ease forwards;
     animation-delay:calc(0.2s * var(--i));
     display: flex;
